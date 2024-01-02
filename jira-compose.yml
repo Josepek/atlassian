@@ -1,10 +1,6 @@
-# 
-#      ___            ____     _____                     
-#  __ / (_)______ _  / __/__  / _/ /__    _____ ________ 
-# / // / / __/ _ `/ _\ \/ _ \/ _/ __/ |/|/ / _ `/ __/ -_)
-# \___/_/_/  \_,_/ /___/\___/_/ \__/|__,__/\_,_/_/  \__/ 
-#                                                        
-#   Docker Compose for Run Jira  
+#   Docker Compose Jira Application
+#   Author: Yousef Keyghobadi
+#   Contact: usef.keyghobadi@gmail.com 
 #   Test for Jira Server 8.x ~ 9.x
 #   Need  "my-net" Network for Run this File
 #   docker network create --driver bridge --subnet=150.50.50.0/24 my-net
@@ -21,7 +17,7 @@ services:
       ATL_DB_TYPE: 'postgres72'
       ATL_JDBC_URL: 'jdbc:postgresql://db-jira:5432/jira'
       ATL_JDBC_USER: 'jira'
-      ATL_JDBC_PASSWORD: 'DA.13jpj93%eBw_Q'
+      ATL_JDBC_PASSWORD: 'Yousef##1368##'
       #   If Use Reverse Proxy Uncomment this Line
       #ATL_TOMCAT_SCHEME: 'https'
       #ATL_TOMCAT_SECURE: 'true'
@@ -47,7 +43,7 @@ services:
     hostname: postgressql-jira
     environment:
       POSTGRES_USER: jira
-      POSTGRES_PASSWORD: 'DA.13jpj93%eBw_Q'
+      POSTGRES_PASSWORD: 'Yousef##1368##'
     volumes:
       - postgresql-data-jira:/var/lib/postgresql/data
     networks:
