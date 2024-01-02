@@ -28,6 +28,12 @@ $ sudo chmod +x /usr/local/bin/docker-compose
 ```
 After completing the installation of both applications, you can measure the correctness of the installation process by checking their versions.
 
-‍‍‍```
-$ sudo docker -v && sudo docker-compose -v 
+```
+$ sudo docker -v && docker-compose -v
+```
+You’ll see output similar to this: example!
+
+```
+Output
+docker-compose version 1.29.2, build 5becea4c
 ```
